@@ -1,0 +1,113 @@
+<h1>Customer Detail</h1>
+<form class="mt-2" [formGroup]="userForm">
+  <label for="name" style="display: block">
+    <span style="display: block">Name</span>
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        placeholder="Masukkan nama Anda"
+        formControlName="name"
+        id="name"
+        name="name"
+      />
+    </mat-form-field>
+    <mat-error
+      class="mb-4"
+      *ngIf="
+        userForm.controls['name'].touched &&
+        userForm.controls['name'].hasError('required')
+      "
+    >
+      Name is <strong>required</strong>
+    </mat-error>
+  </label>
+
+  <label for="address" style="display: block">
+    <span style="display: block">Alamat</span>
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        placeholder="Masukkan alamat Anda"
+        formControlName="address"
+        id="address"
+        name="address"
+      />
+    </mat-form-field>
+    <mat-error
+      class="mb-4"
+      *ngIf="
+        userForm.controls['address'].touched &&
+        userForm.controls['address'].hasError('required')
+      "
+    >
+      Address is <strong>required</strong>
+    </mat-error>
+  </label>
+
+  <span style="display: block">Site</span>
+  <mat-form-field appearance="fill">
+    <mat-select #fontSize value="default" formControlName="site">
+      <mat-option value="default">Pilih Lokasi</mat-option>
+      <mat-option value="store">Toko</mat-option>
+      <mat-option value="warehouse">Gudang</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <label for="description" style="display: block">
+    <span style="display: block">Deskripsi</span>
+    <mat-form-field appearance="fill">
+      <textarea
+        matInput
+        name="description"
+        type="text"
+        id=""
+        cols="30"
+        rows="10"
+        formControlName="description"
+      ></textarea>
+    </mat-form-field>
+
+    <mat-error
+      class="mb-4"
+      *ngIf="
+        userForm.controls['description'].touched &&
+        userForm.controls['description'].hasError('required')
+      "
+    >
+      Description is <strong>required</strong>
+    </mat-error>
+  </label>
+
+  <label for="price" style="display: block">
+    <span style="display: block">Harga</span>
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        placeholder="Masukkan harga"
+        formControlName="price"
+        id="price"
+        name="price"
+        type="number"
+      />
+    </mat-form-field>
+
+    <mat-error
+      class="mb-4"
+      *ngIf="
+        userForm.controls['price'].touched &&
+        userForm.controls['price'].hasError('required')
+      "
+    >
+      Price is <strong>required</strong>
+    </mat-error>
+  </label>
+
+  <button
+    type="button"
+    [disabled]="!userForm.valid"
+    [ngClass]="!userForm.valid ? 'btn-submit-disable' : 'btn-submit'"
+    (click)="onSubmitCustBio(userForm.value)"
+  >
+    On Submit
+  </button>
+</form>

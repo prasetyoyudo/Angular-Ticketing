@@ -1,0 +1,32 @@
+td.mat-cell{
+    text-align: center;
+    padding: 10px;
+}
+
+th.mat-header-cell {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.list {
+    background-color: #f1c40f;
+    height: 100vh;
+}
+
+.btn-action {
+    border: 0;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    cursor: pointer;
+}

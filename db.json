@@ -1,0 +1,60 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "SWEATER OBLONG",
+      "site": "GUDANG",
+      "description": "SWEATER OBLONG SIZE XXL ",
+      "price": 200000
+    },
+    {
+      "name": "test",
+      "address": "testingdd",
+      "description": "testsasc",
+      "price": 2000,
+      "site": "site",
+      "id": 2
+    },
+    {
+      "name": "test",
+      "address": "testtttsss",
+      "description": "testestss",
+      "price": 5000,
+      "site": "site",
+      "id": 3
+    },
+    {
+      "name": "yiyiuhiuadf",
+      "address": "testsadss",
+      "description": "test",
+      "price": 2000,
+      "site": "site",
+      "id": 4
+    },
+    {
+      "name": "test",
+      "address": "testtttt",
+      "description": "ttttttttttttttttt",
+      "price": 16,
+      "site": "warehouse",
+      "id": 5
+    },
+    {
+      "name": "testtt",
+      "address": "testtttsss",
+      "description": "testtjjjj",
+      "price": 10000,
+      "site": "warehouse",
+      "id": 6
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "SWEATER OBLONG",
+      "site": "GUDANG",
+      "description": "SWEATER OBLONG SIZE XXL ",
+      "price": 200000
+    }
+  ]
+}
